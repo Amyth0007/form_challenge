@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      .color {
+        background-color: lawngreen;
+        font-family: elephant;
+        color: aliceblue;
+        padding: 10px;
+        text-align: center;
+      }
+
+      form {
+        background-color: #e2e5de;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        resize: none;
+      }
+
+      #sen {
+        background-color: rgb(119, 236, 47);
+        font-family: elephant;
+        color: aliceblue;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 767px) {
+        body {
+          font-size: 14px;
+        }
+
+        .container {
+          padding: 5px;
+        }
+
+        .color {
+          font-size: 18px;
+          padding: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="color">
+          <p>Contact form.</p>
+          <p>Please fill the text fields.</p>
+        </div>
+        <label for="t1">Your name:</label>
+        <input type="text" id="t1" placeholder="Your Full Name">
+        <label for="t2">Your Email:</label>
+        <input type="email" id="t2" placeholder="Valid Email Address">
+        <label for="t3">Message:</label>
+        <textarea id="t3"></textarea>
+        <label for="t4">Subject:</label>
+        <input type="text" id="t4" placeholder="Job Inquiry">
+        <input id="sen" type="submit" value="Send">
+      </form>
+    </div>
+  </body>
+</html>
